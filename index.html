@@ -7,14 +7,13 @@
   </head>
 
   <body>
-    <header class='header-margin'>
+    <header class='header'>
       <nav class='navigation'>
         <span class='title-text'><span>Show</span><span class='title-purple'>Trackr</span></span>
         <ul class='navigation-list'>
           <li class="navigation-item"><a href="#features">Features</a></li>
           <li class="navigation-item"><a href="#community">Community</a></li>
           <li class="navigation-item"><a href="#getstarted">Get Started</a></li>
-          <li></li>
         </ul>
         <div>
           <a class='navigation-item' href="/login">Log in</a>
@@ -22,36 +21,32 @@
         </div>
       </nav>
     </header>
-    <section>
-      <div class='fr_topic'>
-        <div class='fr-topic-left'>
-          <div>
-            <div class='fr-topic_h1'> 
-              <h1>Track your shows<br>automatically</h1>
-            </div>
-            <div class='fr-topic_p'>
-              <p class='paragraph-h1'>
+    <main>
+      <div class='topic-two-column appication-presentation'>
+        <div class='topic-column'>
+          <div> 
+            <h1>Track your shows<br>automatically</h1>
+            <p class='paragraph1'>
               With ShowTrackr you can track your favorite TV shows<br>automatically,
               so you never loose track of your TV<br>
               shows ever again. 🍿
-              </p>
-            </div>
-            <form class='input-email-form fr-topic_form'>
-              <div class='input-email-form-input-block'>
-                <span class='input-email-form-title'>Email</span>
-                <input class='input-email-form_input' type="email" placeholder="your@email.com" />
-              </div>        
-              <button class='purple-button purple-button-page'>Start tracking</button>
-            </form>
+            </p>
           </div>
-          <div class='fr-topic-compatible'>
-            <span class='fr-topic-compatible-title'>COMPATIBLE WITH</span>
-            <ul class='fr-topic-compatible-links'>
-              <li class='fr-topic-compatible-links-item'><img src="img/netflix.png" alt="Campatible with Netflix" /></li>
-              <li class='fr-topic-compatible-links-item'><img src="img/apple.png" alt="Campatible with Apple" /></li>
-              <li class='fr-topic-compatible-links-item'><img src="img/android.png" alt="Campatible with Android" /></li>
-              <li class='fr-topic-compatible-links-item'><img src="img/windows.png" alt="Campatible with windows" /></li>
-              <li class='fr-topic-compatible-links-item'><img src="img/synology.png" alt="Campatible with Synology" /></li>
+          <form class='email'>
+            <fieldset class='email-value-block'>
+              <label class='email-title' for="email1">Email</label>
+              <input class='email-value' id='email1' type="email" placeholder="your@email.com" />
+            </fieldset>        
+            <button class='purple-button purple-button-page'>Start tracking</button>
+          </form>          
+          <div class='compatible'>
+            <h5 class='compatible-title'>COMPATIBLE WITH</h5>
+            <ul class='compatible-list'>
+              <li class='compatible-list-item'><img src="img/netflix.png" alt="Compatible with Netflix" /></li>
+              <li class='compatible-list-item'><img src="img/apple.png" alt="Compatible with Apple" /></li>
+              <li class='compatible-list-item'><img src="img/android.png" alt="Compatible with Android" /></li>
+              <li class='compatible-list-item'><img src="img/windows.png" alt="Compatible with windows" /></li>
+              <li class='compatible-list-item'><img src="img/synology.png" alt="Compatible with Synology" /></li>
             </ul>
           </div>
         </div>
@@ -59,299 +54,276 @@
             <img src="img/iphone-x-mockup.png" alt="Iphone appplication presentation picture" />
         </div>
       </div>
-      <div class='sd-topic'>
-        <div>
-          <p class='paragraph-under-header'>Features</p>
-          <h2 class='sd-topic_h2'>Built and customized<br>for your habits</h2>
-          <p class='paragraph-h2 sd-topic_p'>
+      <div class='topic-one-column feature-presentation'>
+        <p class='paragraph4'>Features</p>
+        <h2>Built and customized<br>for your habits</h2>
+        <p class='paragraph2'>
             ShowTrackr’s built-in machine learning and context-aware features<br>guarantee
             that all the notifications and recommendations are always<br>delivered
             to you in the perfect moment.
-          </p>
-        </div>
-        <div class='sd-topic-features-links'>
-          <div class='sd-topic-features-links-item'>
-            <div class='sd-topic-features-links-item-img sd-topic-automated-tracking-backround-img'>
-              <img class='sd-topic-automated-tracking_img' src="img/triangle.png" alt="Automated tracking picture" />
-            </div>
-            <h4>Automated tracking</h4>
-            <p class='sd-topic-features-links-item_p'>
-              Track your favorite shows automatically<br>without switching
-              between apps.
-            </p>
-            <a class='sd-topic-features-links-item_a' href="/lm_automated_tracking">Learn more ></a>
+        </p>
+      </div>
+      <ul class='features-list'>
+        <li class='features-list-item'>
+          <div class='features-list-item-icon automated-tracking-background'>
+            <img src="img/triangle.png" alt="Automated tracking picture" />
           </div>
-          <div class='sd-topic-features-links-item'>
-            <div class='sd-topic-features-links-item-img sd-topic-machine-learning-backround-img'>
-              <img class='sd-topic-machine-learning_img' src="img/machine-learning.png" alt="Machine learning picture" />  
-            </div>
-            <h4>Machine learning</h4>
-            <p class='sd-topic-features-links-item_p'>
+          <h4>Automated tracking</h4>
+          <p class='features-list-item-desctiption'>
+                Track your favorite shows automatically<br>without switching
+                between apps.
+          </p>
+          <a class='features-list-item-link' href="/lm_automated_tracking">Learn more ></a>
+        </li>
+        <li class='features-list-item'>
+          <div class='features-list-item-icon machine-learning-background'>
+            <img src="img/machine-learning.png" alt="Machine learning picture" />  
+          </div>
+          <h4>Machine learning</h4>
+          <p class='features-list-item-desctiption'>
               Get recommendations like never before,<br>which are truly
               customized for your taste.
-            </p>
-            <a class='sd-topic-features-links-item_a' href="/lm_machine_learning">Learn more ></a>
+          </p>
+          <a class='features-list-item-link' href="/lm_machine_learning">Learn more ></a>
+        </li>
+        <li class='features-list-item'>
+          <div class='features-list-item-icon smart-notification-background'>
+            <img src="img/smart-notifications.png" alt="Smart notifications" />
           </div>
-          <div class='sd-topic-features-links-item'>
-            <div class='sd-topic-features-links-item-img sd-topic-smart-notification-img'>
-              <img class='sd-topic-smart-notification' src="img/smart-notifications.png" alt="Smart notifications" />
-            </div>
-            <h4>Smart notifications</h4>
-            <p class='sd-topic-features-links-item_p'>
+          <h4>Smart notifications</h4>
+          <p class='features-list-item-desctiption'>
               Receive smart notifications exactly at the<br>right moments when
               you need them.
-            </p>
-            <a class='sd-topic-features-links-item_a' href="/lm_smart_notifications">Learn more ></a>
-          </div>
-        </div>
-        <div class='sd-topic-series-list'>
-          <div class='sd-topic-series-list-item'>
-            <a href="//www.netflix.com/ua/title/70264888" target="_blank"
-              ><img
-                src="img/series/black_mirror.png"
-                alt="Go to offical page of 'Black mirror' series"
-            /></a>
-          </div>
-          <div class='sd-topic-series-list-item'>
-            <a href="//www.netflix.com/ua/title/80057281" target="_blank"
-              ><img
-                src="img/series/stranger_things.png"
-                alt="Go to offical page of 'Stranger Things' series"
-            /></a>
-          </div>
-          <div class='sd-topic-series-list-item'>
-            <a href="//www.hbo.com/westworld" target="_blank"
-              ><img
-                src="img/series/west_world.png"
-                alt="Go to offical page of 'West world' series"
-            /></a>
-          </div>
-          <div class='sd-topic-series-list-item'>
-            <a href="//www.netflix.com/ua/title/70178217" target="_blank"
-              ><img
-                src="img/series/card_house.png"
-                alt="Go to offical page of 'House of Cards' series"
-            /></a>
-          </div>
-          <div class='sd-topic-series-list-item'>
-            <a href="//www.hbo.com/game-of-thrones" target="_blank"
-              ><img
-                src="img/series/game_thrones.png"
-                alt="Go to offical page of 'Game of Thrones' series"
-            /></a>
-          </div>
-          <div class='sd-topic-series-list-item'>
-            <a href="//www.netflix.com/ua/title/80027042" target="_blank"
-              ><img
-                src="img/series/flash.png"
-                alt="Go to offical page of 'Flash' series"
-            /></a>
-          </div>
-          <div class='sd-topic-series-list-item'>
-            <a href="//www.netflix.com/ua/title/80024057" target="_blank"
-              ><img
-                src="img/series/murder.png"
-                alt="Go to offical page of 'How to Get Away With Murder' series"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="features">
-      <div class='td-topic'>
-        <div class='td-topic-left'>
-          <h3 class='td-topic_h3'>Easy-to-use interfaces<br>on every platform</h3>
-          <p class='paragraph-h3 td-topic_p'>
-            Since most of our features work in a completely automated<br>way, you
-            will mainly use our apps to discover new TV shows<br>recommended for
-            you and discuss the most interesting<br>episodes with like-minded
-            people.
           </p>
-          <div>
-            <div class='td-topic-functional-links-item'>
-              <img class='td-topic-functional-links_img' src="img/dashboard.png" alt="Customized Dashboard picture" />
-              <a class='td-topic-functional-links_a' href="/about-custimized-dashboard">Customized Dashboard</a>
-            </div>
-            <div class='td-topic-functional-links-item'>
-              <img class='td-topic-functional-links_img' src="img/day_night_mode.png" alt="Automatic Day & Night Modes picture" />
-              <a class='td-topic-functional-links_a' href="/about-day-night-mode">Automatic Day & Night Modes</a>
-            </div>
-            <div class='td-topic-functional-links-item'>
-              <img class='td-topic-functional-links_img' src="img/integrated_chat.png" alt="Integrated Chat Platformpicture" />
-              <a class='td-topic-functional-links_a' href="/about-integrated-chat">Integrated Chat Platform</a>
-            </div>
-          </div>
+          <a class='features-list-item-link' href="/lm_smart_notifications">Learn more ></a>
+        </li>
+      </ul>
+      <ul class='series-list'>
+        <li >
+          <a href="//www.netflix.com/ua/title/70264888" target="_blank" >
+            <img src="img/series/black_mirror.png" alt="Go to offical page of 'Black mirror' series" />
+          </a>
+        </li>
+        <li>
+          <a href="//www.netflix.com/ua/title/80057281" target="_blank">
+            <img src="img/series/stranger_things.png" alt="Go to offical page of 'Stranger Things' series" />
+          </a>
+        </li>
+        <li>
+          <a href="//www.hbo.com/westworld" target="_blank" >
+            <img src="img/series/west_world.png" alt="Go to offical page of 'West world' series" />
+          </a>
+        </li>
+        <li>
+          <a href="//www.netflix.com/ua/title/70178217" target="_blank" >
+            <img src="img/series/card_house.png" alt="Go to offical page of 'House of Cards' series" />
+          </a>
+        </li>
+        <li>
+          <a href="//www.hbo.com/game-of-thrones" target="_blank">
+            <img src="img/series/game_thrones.png" alt="Go to offical page of 'Game of Thrones' series" />
+          </a>
+        </li>
+        <li>
+          <a href="//www.netflix.com/ua/title/80027042" target="_blank">
+            <img src="img/series/flash.png" alt="Go to offical page of 'Flash' series"/>
+          </a>
+        </li>
+        <li>
+          <a href="//www.netflix.com/ua/title/80024057" target="_blank">
+            <img src="img/series/murder.png" alt="Go to offical page of 'How to Get Away With Murder' series"/>
+          </a>
+        </li>
+      </ul>
+      <div  id="features" class='topic-two-column application-functional'>
+        <div class='topic-column'>
+          <h3>Easy-to-use interfaces<br>on every platform</h3>
+          <p class='paragraph3'>
+              Since most of our features work in a completely automated<br>way, you
+              will mainly use our apps to discover new TV shows<br>recommended for
+              you and discuss the most interesting<br>episodes with like-minded
+              people.
+          </p>
+          <ul class='functional-list'>
+            <li>
+              <img src="img/dashboard.png" alt="Customized Dashboard picture" />
+              <a class='functional-list-item-link' href="/about-custimized-dashboard">Customized Dashboard</a>
+            </li>
+            <li>
+              <img src="img/day_night_mode.png" alt="Automatic Day & Night Modes picture" />
+              <a class='functional-list-item-link' href="/about-day-night-mode">Automatic Day & Night Modes</a>
+            </li>
+            <li>
+              <img src="img/integrated_chat.png" alt="Integrated Chat Platformpicture" />
+              <a class='functional-list-item-link' href="/about-integrated-chat">Integrated Chat Platform</a>
+            </li>
+          </ul>
         </div>
-        <div class='td-topic-right'>
-          <div class='td-topic-rigth-front_img'>
-            <img src="img/iphone-x-mockup.png" alt="Iphone appplication presentation picture"/>
-          </div>
-          <div class='td-topic-rigth-behind_img'>
-            <img src="img/web-app-mockup.png" alt="Web application presentation picture" />
-          </div>
+        <div class='application-functional-background'>
+          <img class='application-functional-picture' src="img/iphone-x-mockup.png" alt="Iphone appplication presentation picture"/>
         </div>
       </div>
-    </section>
-    <section id="community">
-      <p class='paragraph-under-header'>Community</p>
-      <h3>We believe in the<br>power of community</h3>
-      <p class='paragraph-h3'>
-        Our goal is to create a product and service that you’re<br>satisfied
-        with and use it every day. This is why we’re<br>constantly working on
-        our services to make it better<br>every day and really listen to what
-        our users has to say.
-      </p>
-      <a href="/read-more-testimonials" target="_blank">
-        Read more testimonials</a
-      >
-      <div>
-        <article>
-          <h5>
-            <a href="/andrey-cherevko" target="_blank">Andrey Cherevko <img src="img/twitter.png" alt="Go to Andrey Chrevko twitter profile"/></a>
-          </h5>
-          <p>
-            I use ShowTrackr every day, and it’s<br>awesome! I track all of my
-            TV shows in it. :)
+      <div id="community">
+        <div>
+          <p class='paragraph4'>Community</p>
+          <h3>We believe in the<br>power of community</h3>
+          <p class='paragraph3'>
+            Our goal is to create a product and service that you’re<br>satisfied
+            with and use it every day. This is why we’re<br>constantly working on
+            our services to make it better<br>every day and really listen to what
+            our users has to say.
           </p>
-          <p>Jan 18, 2018</p>
-        </article>
-        <article>
-          <h5>
-            <a href="/patrick-martin" target="_blank">Patrick Martin<img src="img/twitter.png" alt="Go to Patrick Martin twitter profile"/></a>
-          </h5>
-          <p>
-            ShowTrackr is a real gem! I started using it<br>
-            a couple months ago and it completely<br>changed the way how I
-            watch TV shows. I can only recommend it!
-          </p>
-          <p>Jan 18, 2018</p>
-        </article>
-        <article>
-          <h5>
-            <a href="/bruce-murphy" target="_blank" >Bruce Murphy<img src="img/twitter.png" alt="Go to Bruce Murphy twitter profile" /></a>
-          </h5>
-          <p>
-            I use ShowTrackr every day, and it’s<br>awesome! I track all of my
-            TV shows in it. :)
-          </p>
-          <p>Jan 18, 2018</p>
-        </article>
-        <article>
-          <h5>
-            <a href="/crystal-perkins" target="_blank">Crystal Perkins<img src="img/twitter.png" alt="Go to Crystal Perkins twitter profile" /></a>
-          </h5>
-          <p>
-            ShowTrackr is a real gem! I started using it<br>a couple months
-            ago and it completely<br>changed the way how I<br>watch TV
-            shows. I can only recommend it!
-          </p>
-          <p>Jan 18, 2018</p>
-        </article>
-        <article>
-          <h5>
-            <a href="/bruce-wain" target="_blank" >Bruce Wain<img src="img/twitter.png" alt="Go to Bruce Wain twitter profile" /></a>
-          </h5>
-          <p>
-            ShowTrackr is a real gem! I started using it<br>
-            a couple months ago and it completely<br>changed the way how I
-            watch TV shows. I can only recommend it!
-          </p>
-          <p>Jan 18, 2018</p>
-        </article>
+          <a href="/read-more-testimonials" target="_blank">Read more testimonials</a>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <h5>
+                <a href="/andrey-cherevko" target="_blank">Andrey Cherevko <img src="img/twitter.png" alt="Go to Andrey Chrevko twitter profile"/></a>
+              </h5>
+              <p>
+                I use ShowTrackr every day, and it’s<br>awesome! I track all of my
+                TV shows in it. :)
+              </p>
+              <p>Jan 18, 2018</p>
+            </li>
+            <li>
+              <h5>
+                <a href="/patrick-martin" target="_blank">Patrick Martin<img src="img/twitter.png" alt="Go to Patrick Martin twitter profile"/></a>
+              </h5>
+              <p>
+                ShowTrackr is a real gem! I started using it<br>
+                a couple months ago and it completely<br>changed the way how I
+                watch TV shows. I can only recommend it!
+              </p>
+              <p>Jan 18, 2018</p>
+            </li>
+            <li>
+              <h5>
+                <a href="/bruce-murphy" target="_blank" >Bruce Murphy<img src="img/twitter.png" alt="Go to Bruce Murphy twitter profile" /></a>
+              </h5>
+              <p>
+                I use ShowTrackr every day, and it’s<br>awesome! I track all of my
+                TV shows in it. :)
+              </p>
+              <p>Jan 18, 2018</p>
+            </li>
+            <li>
+              <h5>
+                <a href="/crystal-perkins" target="_blank">Crystal Perkins<img src="img/twitter.png" alt="Go to Crystal Perkins twitter profile" /></a>
+              </h5>
+              <p>
+                ShowTrackr is a real gem! I started using it<br>a couple months
+                ago and it completely<br>changed the way how I<br>watch TV
+                shows. I can only recommend it!
+              </p>
+              <p>Jan 18, 2018</p>
+            </li>
+            <li>
+              <h5>
+                <a href="/bruce-wain" target="_blank" >Bruce Wain<img src="img/twitter.png" alt="Go to Bruce Wain twitter profile" /></a>
+              </h5>
+              <p>
+                ShowTrackr is a real gem! I started using it<br>
+                a couple months ago and it completely<br>changed the way how I
+                watch TV shows. I can only recommend it!
+              </p>
+              <p>Jan 18, 2018</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h5>
+                <a href="/andrey-cherevko" target="_blank" >Andrey Cherevko<img src="img/twitter.png" alt="Go to Andrey Chrevko twitter profile" /></a>
+              </h5>
+              <p>
+                I use ShowTrackr every day, and it’s<br>awesome! I track all of my
+                TV shows in it. :)
+              </p>
+              <p>Jan 18, 2018</p>
+            </li>
+            <li>
+              <h5>
+                <a href="/thomas-cruz" target="_blank">Thomas Cruz<img  src="img/twitter.png" alt="Go to Thomas Cruz twitter profile"/></a>
+              </h5>
+              <p>
+                ShowTrackr is a real gem! I started using it a couple months ago and
+                it completely changed the way how I watch TV shows. I can only
+                recommend it!
+              </p>
+              <p>Jan 18, 2018</p>
+            </li>
+            <li>
+              <h5>
+                <a href="/gregory-wallace" target="_blank" >Gregory Wallace<img src="img/twitter.png" alt="Go to Gregory Wallace twitter profile" /></a>
+              </h5>
+              <p>
+                I use ShowTrackr every day, and it’s<br>awesome! I track all of my
+                TV shows in it. :)
+              </p>
+              <p>Jan 18, 2018</p>
+            </li>
+            <li>
+              <h5>
+                <a href="/megan-walters" target="_blank" >Megan Walters<img src="img/twitter.png" alt="Go to Megan Walters twitter profile" /></a>
+              </h5>
+              <p>
+                ShowTrackr is a real gem! I started using it<br>a couple months
+                ago and it completely<br>changed the way how I<br>watch TV
+                shows. I can only recommend it!
+              </p>
+              <p>Jan 18, 2018</p>
+            </li>
+            <li>
+              <h5>
+                <a href="/andrew-cook" target="_blank" >Andrew Cook<img src="img/twitter.png" alt="Go to Andrew Cook twitter profile" /></a>
+              </h5>
+              <p>
+                ShowTrackr is a real gem! I started using it<br>
+                a couple months ago and it completely<br>changed the way how I
+                watch TV shows. I can only recommend it!
+              </p>
+              <p>Jan 18, 2018</p>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <article>
-          <h5>
-            <a href="/andrey-cherevko" target="_blank" >Andrey Cherevko<img src="img/twitter.png" alt="Go to Andrey Chrevko twitter profile" /></a>
-          </h5>
-          <p>
-            I use ShowTrackr every day, and it’s<br>awesome! I track all of my
-            TV shows in it. :)
-          </p>
-          <p>Jan 18, 2018</p>
-        </article>
-        <article>
-          <h5>
-            <a href="/thomas-cruz" target="_blank">Thomas Cruz<img  src="img/twitter.png" alt="Go to Thomas Cruz twitter profile"/></a>
-          </h5>
-          <p>
-            ShowTrackr is a real gem! I started using it a couple months ago and
-            it completely changed the way how I watch TV shows. I can only
-            recommend it!
-          </p>
-          <p>Jan 18, 2018</p>
-        </article>
-        <article>
-          <h5>
-            <a href="/gregory-wallace" target="_blank" >Gregory Wallace<img src="img/twitter.png" alt="Go to Gregory Wallace twitter profile" /></a>
-          </h5>
-          <p>
-            I use ShowTrackr every day, and it’s<br>awesome! I track all of my
-            TV shows in it. :)
-          </p>
-          <p>Jan 18, 2018</p>
-        </article>
-        <article>
-          <h5>
-            <a href="/megan-walters" target="_blank" >Megan Walters<img src="img/twitter.png" alt="Go to Megan Walters twitter profile" /></a>
-          </h5>
-          <p>
-            ShowTrackr is a real gem! I started using it<br>a couple months
-            ago and it completely<br>changed the way how I<br>watch TV
-            shows. I can only recommend it!
-          </p>
-          <p>Jan 18, 2018</p>
-        </article>
-        <article>
-          <h5>
-            <a href="/andrew-cook" target="_blank" >Andrew Cook<img src="img/twitter.png" alt="Go to Andrew Cook twitter profile" /></a>
-          </h5>
-          <p>
-            ShowTrackr is a real gem! I started using it<br>
-            a couple months ago and it completely<br>changed the way how I
-            watch TV shows. I can only recommend it!
-          </p>
-          <p>Jan 18, 2018</p>
-        </article>
+      <div id="getstarted">
+        <p class='paragraph4'>Get Started</p>
+        <h2>Start tracking your TV<br>shows for free</h2>
+        <p class='paragraph2'>
+          In order to start tracking your TV shows, all you have to do is enter<br>your
+          email address. Everything else will be taken care of by us. All you<br>have
+          to do is sit back, relax and enjoy your TV shows.
+        </p>
+        <form class='email'>
+          <fieldset class='email-value-block'>
+            <label class='email-title' for="email2">Email</label>
+            <input class='email-value' id='email2' type="email" placeholder="your@email.com" />
+          </fieldset>        
+          <button class='purple-button purple-button-page'>Start tracking</button>
+        </form> 
       </div>
-    </section>
-    <section id="getstarted">
-      <p class='paragraph-under-header'>Get Started</p>
-      <h2>Start tracking your TV<br>shows for free</h2>
-      <p class='paragraph-h2'>
-        In order to start tracking your TV shows, all you have to do is enter<br>your
-        email address. Everything else will be taken care of by us. All you<br>have
-        to do is sit back, relax and enjoy your TV shows.
-      </p>
-      <form>
-        <input type="email" placeholder="test@gmail.com" />
-        <button>Start tracking</button>
-      </form>
-      <footer>
-        <ul>
-          <li>
-            <a href="//www.tritter.com" target="_blank"
-              ><img src="img/twitter.png" alt="Got to our twitter official page"
-            /></a>
-          </li>
-          <li>
-            <a href="//www.facebook.com" target="_blank"
-              ><img
-                src="img/facebook.png"
-                alt="Got to our facebook official page"
-            /></a>
-          </li>
-          <li>
-            <a href="//www.youtube.com" target="_blank"
-              ><img
-                src="img/twitter.png"
-                alt="Got to our youtube official chanel"
-            /></a>
-          </li>
-        </ul>
-
-        <p>Copyright 2018 All rights reserved — Designed by Daniel Korpai</p>
-      </footer>
-    </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="//www.tritter.com" target="_blank">
+            <img src="img/twitter.png" alt="Got to our twitter official page"/>
+          </a>
+        </li>
+        <li>
+          <a href="//www.facebook.com" target="_blank">
+            <img src="img/facebook.png" alt="Got to our facebook official page" />
+          </a>
+        </li>
+        <li>
+          <a href="//www.youtube.com" target="_blank">
+            <img src="img/twitter.png" alt="Got to our youtube official chanel" />
+          </a>
+        </li>
+      </ul>
+      <p>Copyright 2018 All rights reserved — Designed by Daniel Korpai</p>
+    </footer>
   </body>
 </html>
