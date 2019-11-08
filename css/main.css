@@ -147,17 +147,15 @@ h4 {
 
 .topic-two-column {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around; 
 }
 
 .topic-one-column {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; 
+  text-align: center;
 }
 
-.topic-column {
+.hero-left {
   display: flex;
   flex-direction: column;
   justify-content: space-around; 
@@ -178,6 +176,7 @@ h4 {
 .compatible-list {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .compatible-list-item {
@@ -191,15 +190,16 @@ h4 {
 .features-list {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-bottom: 140px;
 }
 
 .features-list-item {
-  align-items: center;
-  display: flex;
-  height: 200px;
-  flex-direction: column;
-  justify-content: space-between;
+  text-align: center;
+}
+
+.features-list-item:last-child {
+  margin-right: 0;
 }
 
 .features-list-item-desctiption {
@@ -216,11 +216,14 @@ h4 {
 }
 .features-list-item-icon {
   align-items: center;
+  border-radius: 14px;
   display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;;
   justify-content: center;
   width: 50px;
   height: 50px;
-  border-radius: 14px;
 }
 
 .automated-tracking-background {
@@ -238,8 +241,9 @@ h4 {
 .series-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin-bottom: 140px;
+  overflow: hidden;
+  justify-content: space-between;
 }
 
 .functional-list {
@@ -265,6 +269,134 @@ h4 {
 }
 
 .application-functional-picture {
+  margin-left: -100px;
   margin-top: 150px;
+}
+
+.community {
+  background-color: black; 
+  color: #ffffff;
+  height: 800px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.community-left {
+  display: flex;
+  flex-direction: column;
+  margin-top:200px;
+}
+
+.community-right {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.button-community {
+  font-family: SourceSansPro-SemiBold;
+  max-width: 60%;
+}
+
+.feedback-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-list-left {
+  margin-top: -100px;
+}
+
+.feedback-list-right {
+  margin-top: -180px;
+}
+
+.feedback-list-item {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.twitt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 260px;
+  height: 210px;
+
+  padding: 15px;
+}
+
+.twitt-profile-containter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.twitt-profile-title-container {
+  display: flex;
+}
+
+.twitt-user-title {
+  font-family: SourceSansPro-SemiBold;
+  font-size: 12px;
+  margin: auto;
+}
+
+.twitt-profile-img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.twitt-text {
+  font-family: SourceSansPro-Regular;
+  font-size: 13px;
+  opacity: .8;
+}
+
+.twitt-time {
+  font-family: SourceSansPro-Regular;
+  font-size: 12px;
+  opacity: .5;
+}
+
+.getstarted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.getstarted-email {
+  width: 450px;
+  margin-bottom: 120px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-list-item {
+  margin-right: 30px;
+  opacity: .2;
+}
+
+.footer-list-item:last-child {
+  margin-right: 0;
+}
+
+.footer-paragraph {
+  font-family: SourceSansPro-SemiBold;
+  font-size: 12px;
+  opacity: .3;
 }
 
