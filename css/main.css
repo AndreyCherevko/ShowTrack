@@ -3,40 +3,11 @@
   box-sizing: border-box;
 }
 
-section {
-  position: relative;
+.header {
+  margin-bottom: 85px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-h1 {
-  font-family: SourceSansPro-Black;
-  font-size: 70px;
-  margin: 0;
-}
-
-h2 {
-  font-family: SourceSansPro-Black;
-  font-size: 60px;
-  margin: 0;
-}
-
-h3 {
-  font-family: SourceSansPro-Bold;
-  font-size: 46px;
-  margin: 0;
-}
-
-h4 {
-  font-family: SourceSansPro-Bold;
-  font-size: 18px;
-  margin: 0;
-}
-
-/*styles for header-menu  */
+/* navigation menu */
 
 .navigation {
   align-items: center;
@@ -44,37 +15,53 @@ h4 {
   justify-content: space-around;
 }
 
-.navigation-list {
+.navigation-pages__list {
   display: flex;
   justify-content: center;
+  list-style-type: none;
+  padding: 0;
 }
 
-.navigation-item {
+.navigation-pages__item {
   margin-right: 15px;
   font-family: SourceSansPro-Regular;
   font-size: 14px;
   color: black;
 }
 
-.navigation-item:last-child {
+.navigation-pages__item:last-child {
   margin-right: auto;
 }
 
-.title-text {
+.navigation-title {
   font-family: SourceSansPro-Bold;
   font-size: 18px;
 }
 
-.title-purple {
+.navigation-title__purple-part {
   color: #540cfa;
 }
 
-.header {
-  margin-bottom: 85px;
+.navigation-commands {
+  align-items: center;
+  display: flex;
 }
-/*styles for header-menu  */
 
-/*styles for common elements  */
+.navigation-commands__item {
+  margin-right: 15px;
+  font-family: SourceSansPro-Regular;
+  font-size: 14px;
+  color: black;
+  padding: 0;
+}
+
+.navigation-commands__item--login {
+  margin-right: 30px;
+}
+
+/* navigation menu */
+
+ /* purple-button */
 
 .purple-button {
   background-color: #540cfa;
@@ -88,85 +75,133 @@ h4 {
   background-color: #3907ad;
 }
 
-.purple-button-header {
+.purple-button--header {
   font-size: 14px;
 }
 
-.purple-button-page {
+.purple-button--email {
   font-size: 16px;
 }
 
-.paragraph1 {
-  font-family: SourceSansPro-Light;
-  font-size: 21px;
-  opacity: .8;
+.purple-button--community {
+  font-family: SourceSansPro-SemiBold;
+  max-width: 60%;
 }
 
-.paragraph2 {
-  font-family: SourceSansPro-Regular;
-  font-size: 21px;
-  opacity: .8;
-}
+/* purple-button */
 
-.paragraph3 {
-  font-family: SourceSansPro-Regular;
-  font-size: 18px;
-  margin-bottom: 10px;  
-  opacity: .8;
-}
+/* email-form */
 
-.paragraph4 {
-  font-family: SourceSansPro-Light;
-  font-size: 18px;
-  opacity: .8;
-}
-
-.email {
+.email-form {
   display: flex;
   justify-content: space-between;
 }
 
-.email-title {
+.email-form--hero {
+  width: 450px;
+}
+
+.email-form--getstarted {
+  width: 450px;
+  margin-bottom: 120px;
+}
+
+.email-input-container {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.email-input-container__value {
+  border: none;
+  font-family: SourceSansPro-Regular;
+  font-size: 16px;
+}
+
+.email-input-container__title {
   color: #540cfa;
   font-family: SourceSansPro-Bold;
   font-size: 12px;
   font-weight: bold;
 }
 
-.email-value-block {
-  border: none;
-  display: flex;
-  flex-direction: column;
-}
+/* email-form */
 
-.email-value {
-  border: none;
-  font-family: SourceSansPro-Regular;
-  font-size: 16px;
-}
+/*container with two columns */
 
-.topic-two-column {
+.two-columns-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; 
 }
 
-.topic-one-column {
-  text-align: center;
-}
-
-.hero-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; 
-}
-
-/*styles for common elements  */
-
-.appication-presentation {
+.two-columns-container--appication-presentation {
   margin-bottom: 160px;
+  margin-top: 85px;
 }
-.compatible-title {
+
+.two-columns-container--application-functional {
+  margin-bottom: 300px;
+}
+
+.two-columns-container--community {
+  background-color: black; 
+  color: #ffffff;
+  height: 800px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+/*container with two columns */
+
+/* hero page information */
+
+.hero-information-container {
+  
+}
+
+.hero-information-container--bottom {
+  margin-top: 75px;
+}
+
+.hero-information {
+
+}
+
+.hero-information__header {
+  font-family: SourceSansPro-Black;
+  font-size: 70px;
+  margin: 0;
+}
+
+.hero-information__paragraph {
+  font-family: SourceSansPro-Light;
+  font-size: 21px;
+  opacity: .8;
+}
+
+.hero-image-container {
+  
+}
+
+/* hero page information */
+
+/* compatible page information */
+
+.compatible-information {
+
+}
+
+.compatible-information--hero {
+  margin-top: 85px;
+  width: 450px;
+}
+
+/* compatible page information */
+
+/*list with compatible devices */
+
+.compatible-header {
   font-family: SourceSansPro-SemiBold;
   font-size: 12px;
   letter-spacing: 2px;
@@ -177,44 +212,86 @@ h4 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
 }
 
-.compatible-list-item {
+.compatible-list__item {
   opacity: .3;
 }
 
-.feature-presentation {
+/*list with compatible devices */
+
+/*feature page information */
+
+.feature-information-container {
+  text-align: center;
+}
+
+.feature-information-container--bottom {
   margin-bottom: 80px;
 }
+
+.feature-information {
+
+}
+
+.feature-information--bottom {
+  margin-bottom: 140px;
+}
+
+.feature-information__title {
+  font-family: SourceSansPro-Light;
+  font-size: 18px;
+  opacity: .8;
+}
+
+.feature-information__header {
+  font-family: SourceSansPro-Black;
+  font-size: 60px;
+  margin: 0;
+}
+
+.feature-information__paragraph {
+  font-family: SourceSansPro-Regular;
+  font-size: 21px;
+  opacity: .8;
+}
+
+/*feature page information */
+
+/* list with feautures description */
 
 .features-list {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 140px;
+  list-style-type: none;
+  padding: 0;
 }
 
-.features-list-item {
+.features-list__item {
   text-align: center;
 }
 
-.features-list-item:last-child {
+.features-list__item:last-child {
   margin-right: 0;
 }
 
-.features-list-item-desctiption {
+.features-list__desctiption {
   font-family: SourceSansPro-Regular;
   font-size: 16px;
   opacity: .7;
 }
 
-.features-list-item-link {
+.features-list__link {
   font-family: SourceSansPro-SemiBold;
   font-size: 16px;
   opacity: .7;
   color: #540cfa;
 }
-.features-list-item-icon {
+.features-list__icon {
   align-items: center;
   border-radius: 14px;
   display:flex;
@@ -226,17 +303,21 @@ h4 {
   height: 50px;
 }
 
-.automated-tracking-background {
+.features-list__icon--automated-tracking {
   background-image: linear-gradient(to top, #9c09db, #1c0fd7);
 }
 
-.machine-learning-background {
+.features-list__icon--machine-learning {
   background-image: linear-gradient(to top, #f2c314, #fc3832);
 }
 
-.smart-notification-background {
+.features-list__icon--smart-notification {
   background-image: linear-gradient(to top, #32fbfc, #3214f2);
 }
+
+/* list with feautures description */
+
+/*list with serials */
 
 .series-list {
   display: flex;
@@ -244,74 +325,117 @@ h4 {
   margin-bottom: 140px;
   overflow: hidden;
   justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
 }
+
+/* list with serials */
+
+/* functional page information */
+
+.functional-information {
+
+}
+
+.functional-information_header {
+  font-family: SourceSansPro-Bold;
+  font-size: 46px;
+  margin: 0;
+}
+
+.functional-information__paragraph {
+  font-family: SourceSansPro-Regular;
+  font-size: 18px;
+  margin-bottom: 10px;  
+  opacity: .8;
+}
+
+.functional-image-container {
+  height: 510px;
+  width: 650px;
+  background-image: url(../img/web-app-mockup.png)
+}
+
+.functional-image--bottom-left {
+  margin-left: -100px;
+  margin-top: 150px;
+}
+
+/* functional page information */
+
+/* list with functional disription */
 
 .functional-list {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 200px;
+  list-style-type: none;
+  padding: 0;
 }
 
-.functional-list-item-link {
+.functional-list__link {
   font-family: SourceSansPro-SemiBold;
   font-size: 16px;
 }
 
-.application-functional {
-  margin-bottom: 300px;
-}
+/* list with functional disription */
 
-.application-functional-background {
-  height: 510px;
-  width: 650px;
-  background-image: url(../img/web-app-mockup.png)
-}
+/* community page information */
 
-.application-functional-picture {
-  margin-left: -100px;
-  margin-top: 150px;
-}
-
-.community {
-  background-color: black; 
-  color: #ffffff;
-  height: 800px;
-  overflow: hidden;
-  margin-bottom: 100px;
-}
-
-.community-left {
+.community-information {
   display: flex;
   flex-direction: column;
-  margin-top:200px;
 }
 
-.community-right {
+.community-information--center-align {
+  margin-top:200px;
+}
+.community-information__title {
+  font-family: SourceSansPro-Light;
+  font-size: 18px;
+  opacity: .8;
+}
+
+.community-information__header {
+  font-family: SourceSansPro-Bold;
+  font-size: 46px;
+  margin: 0;
+}
+
+.community-information__paragraph {
+  font-family: SourceSansPro-Regular;
+  font-size: 18px;
+  margin-bottom: 10px;  
+  opacity: .8;
+}
+
+.community-feedback-container {
   display: flex;
   overflow: hidden;
   justify-content: center;
 }
 
-.button-community {
-  font-family: SourceSansPro-SemiBold;
-  max-width: 60%;
-}
+/* community page information */
 
-.feedback-list{
+/*list with twitter feedbacks */
+
+.feedback-list {
   display: flex;
   flex-direction: column;
+  list-style-type: none;
+  padding: 0;
 }
 
-.feedback-list-left {
+.feedback-list--left {
   margin-top: -100px;
 }
 
-.feedback-list-right {
+.feedback-list--right {
   margin-top: -180px;
 }
 
-.feedback-list-item {
+.feedback-list__item {
   background-color: rgba(255, 255, 255, 0.08);
   border-radius: 10px;
   margin-right: 20px;
@@ -322,10 +446,8 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   width: 260px;
   height: 210px;
-
   padding: 15px;
 }
 
@@ -335,21 +457,21 @@ h4 {
   justify-content: space-between;
 }
 
-.twitt-profile-title-container {
+.twitt-profile-title {
   display: flex;
 }
 
-.twitt-user-title {
-  font-family: SourceSansPro-SemiBold;
-  font-size: 12px;
-  margin: auto;
-}
-
-.twitt-profile-img {
+.twitt-profile-title__img {
   border-radius: 50%;
   width: 35px;
   height: 35px;
   margin-right: 10px;
+}
+
+.twitt-profile-title__header {
+  font-family: SourceSansPro-SemiBold;
+  font-size: 12px;
+  margin: auto;
 }
 
 .twitt-text {
@@ -364,16 +486,40 @@ h4 {
   opacity: .5;
 }
 
-.getstarted {
+/*list with twitter feedbacks */
+
+/*get started page information */
+
+.getstarted-information {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.getstarted-email {
-  width: 450px;
-  margin-bottom: 120px;
+.getstarted-information__title {
+  font-family: SourceSansPro-Light;
+  font-size: 18px;
+  opacity: .8;
+  text-align: center;
 }
+
+.getstarted-information__header {
+  font-family: SourceSansPro-Black;
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+.getstarted-information__paragraph {
+  font-family: SourceSansPro-Regular;
+  font-size: 21px;
+  opacity: .8;
+  text-align: center;
+}
+
+/*get started page information */
+
+/*footer page information */
 
 .footer {
   display: flex;
@@ -383,20 +529,23 @@ h4 {
 
 .footer-list {
   display: flex;
+  list-style-type: none;
+  padding: 0;
 }
 
-.footer-list-item {
+.footer-list__item {
   margin-right: 30px;
   opacity: .2;
 }
 
-.footer-list-item:last-child {
+.footer-list__item:last-child {
   margin-right: 0;
 }
 
-.footer-paragraph {
+.footer-copyright-text {
   font-family: SourceSansPro-SemiBold;
   font-size: 12px;
   opacity: .3;
 }
 
+/*footer page information */

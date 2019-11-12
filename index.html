@@ -7,101 +7,102 @@
   </head>
 
   <body>
+    <!-- navigation menu-->
     <header class='header'>
       <nav class='navigation'>
-        <span class='title-text'><span>Show</span><span class='title-purple'>Trackr</span></span>
-        <ul class='navigation-list'>
-          <li class="navigation-item"><a href="#features">Features</a></li>
-          <li class="navigation-item"><a href="#community">Community</a></li>
-          <li class="navigation-item"><a href="#getstarted">Get Started</a></li>
+        <span class='navigation-title'>Show<span class='navigation-title__purple-part'>Trackr</span></span>   
+        <ul class='navigation-pages__list'>
+          <li class="navigation-pages__item"><a href="#features">Features</a></li>
+          <li class="navigation-pages__item"><a href="#community">Community</a></li>
+          <li class="navigation-pages__item"><a href="#getstarted">Get Started</a></li>
         </ul>
-        <div>
-          <a class='navigation-item' href="/login">Log in</a>
-          <button class='purple-button purple-button-header'>Get started</button>
+        <div class='navigation-commands'>
+          <a class='navigation-commands__item navigation-commands__item--login' href="/login">Log in</a>
+          <button class='purple-button purple-button--header'>Get started</button>
         </div>
       </nav>
     </header>
     <main>
-      <div class='topic-two-column appication-presentation'>
-        <div class='hero-left'>
-          <div>
-            <div> 
-              <h1>Track your shows<br>automatically</h1>
-              <p class='paragraph1'>
+      <div class='two-columns-container two-columns-container--appication-presentation'>
+        <div class='hero-information-container hero-information-container--bottom'>
+          <div class='hero-information'> 
+            <h1 class='hero-information__header'>Track your shows<br>automatically</h1>
+            <p class='hero-information__paragraph'>
                 With ShowTrackr you can track your favorite TV shows<br>automatically,
                 so you never loose track of your TV<br>
                 shows ever again. 🍿
-              </p>
-            </div>
-            <form class='email'>
-              <fieldset class='email-value-block'>
-                <label class='email-title' for="email1">Email</label>
-                <input class='email-value' id='email1' type="email" placeholder="your@email.com" />
-              </fieldset>        
-              <button class='purple-button purple-button-page'>Start tracking</button>
-            </form> 
-          </div>         
-          <div class='compatible'>
-            <h5 class='compatible-title' >COMPATIBLE WITH</h5>
+            </p>
+          </div>
+          <form class='email-form email-form--hero'>
+            <fieldset class='email-input-container'>
+              <label class='email-input-container__title' for="email1">Email</label>
+              <input class='email-input-container__value' id='email1' type="email" placeholder="your@email.com" />
+            </fieldset>        
+            <button class='purple-button purple-button--email'>Start tracking</button>
+          </form>         
+          <div class='compatible-information compatible-information--hero'>
+            <h5 class='compatible-header' >COMPATIBLE WITH</h5>
             <ul class='compatible-list'>
-              <li class='compatible-list-item'><img src="img/netflix.png" alt="Compatible with Netflix" /></li>
-              <li class='compatible-list-item'><img src="img/apple.png" alt="Compatible with Apple" /></li>
-              <li class='compatible-list-item'><img src="img/android.png" alt="Compatible with Android" /></li>
-              <li class='compatible-list-item'><img src="img/windows.png" alt="Compatible with windows" /></li>
-              <li class='compatible-list-item'><img src="img/synology.png" alt="Compatible with Synology" /></li>
+              <li class='compatible-list__item'><img src="img/netflix.png" alt="Compatible with Netflix" /></li>
+              <li class='compatible-list__item'><img src="img/apple.png" alt="Compatible with Apple" /></li>
+              <li class='compatible-list__item'><img src="img/android.png" alt="Compatible with Android" /></li>
+              <li class='compatible-list__item'><img src="img/windows.png" alt="Compatible with windows" /></li>
+              <li class='compatible-list__item'><img src="img/synology.png" alt="Compatible with Synology" /></li>
             </ul>
           </div>
         </div>
-        <div>
+        <div class='hero-image-container'>
             <img src="img/iphone-x-mockup.png" alt="Iphone appplication presentation picture" />
         </div>
       </div>
-      <div class='topic-one-column feature-presentation'>
-        <p class='paragraph4'>Features</p>
-        <h2>Built and customized<br>for your habits</h2>
-        <p class='paragraph2'>
-            ShowTrackr’s built-in machine learning and context-aware features<br>guarantee
-            that all the notifications and recommendations are always<br>delivered
-            to you in the perfect moment.
-        </p>
+      <div class='feature-information-container feature-information-container--bottom'>
+        <div class='feature-information feature-information--bottom'>
+          <p class='feature-information__title'>Features</p>
+          <h2 class='feature-information__header'>Built and customized<br>for your habits</h2>
+          <p class='feature-information__paragraph'>
+              ShowTrackr’s built-in machine learning and context-aware features<br>guarantee
+              that all the notifications and recommendations are always<br>delivered
+              to you in the perfect moment.
+          </p>
+        </div>
       </div>
-      <ul class='features-list'>
-        <li class='features-list-item'>
-          <div class='features-list-item-icon automated-tracking-background'>
+      <ul class='features-list feature-text--bottom'>
+        <li class='features-list__item'>
+          <div class='features-list__icon features-list__icon--automated-tracking'>
             <img src="img/triangle.png" alt="Automated tracking picture" />
           </div>
           <h4>Automated tracking</h4>
-          <p class='features-list-item-desctiption'>
+          <p class='features-list__desctiption'>
                 Track your favorite shows automatically<br>without switching
                 between apps.
           </p>
-          <a class='features-list-item-link' href="/lm_automated_tracking">Learn more ></a>
+          <a class='features-list__link' href="/lm_automated_tracking">Learn more ></a>
         </li>
-        <li class='features-list-item'>
-          <div class='features-list-item-icon machine-learning-background'>
+        <li class='features-list__item'>
+          <div class='features-list__icon features-list__icon--machine-learning '>
             <img src="img/machine-learning.png" alt="Machine learning picture" />  
           </div>
           <h4>Machine learning</h4>
-          <p class='features-list-item-desctiption'>
+          <p class='features-list__desctiption'>
               Get recommendations like never before,<br>which are truly
               customized for your taste.
           </p>
-          <a class='features-list-item-link' href="/lm_machine_learning">Learn more ></a>
+          <a class='features-list__link' href="/lm_machine_learning">Learn more ></a>
         </li>
-        <li class='features-list-item'>
-          <div class='features-list-item-icon smart-notification-background'>
+        <li class='features-list__item'>
+          <div class='features-list__icon features-list__icon--smart-notification'>
             <img src="img/smart-notifications.png" alt="Smart notifications" />
           </div>
           <h4>Smart notifications</h4>
-          <p class='features-list-item-desctiption'>
+          <p class='features-list__desctiption'>
               Receive smart notifications exactly at the<br>right moments when
               you need them.
           </p>
-          <a class='features-list-item-link' href="/lm_smart_notifications">Learn more ></a>
+          <a class='features-list__link' href="/lm_smart_notifications">Learn more ></a>
         </li>
       </ul>
       <ul class='series-list'>
-        <li >
+        <li>
           <a href="//www.netflix.com/ua/title/70264888" target="_blank" >
             <img src="img/series/black_mirror.png" alt="Go to offical page of 'Black mirror' series" />
           </a>
@@ -137,10 +138,10 @@
           </a>
         </li>
       </ul>
-      <div  id="features" class='topic-two-column application-functional'>
-        <div class='topic-column'>
-          <h3>Easy-to-use interfaces<br>on every platform</h3>
-          <p class='paragraph3'>
+      <div  id="features" class='two-columns-container two-columns-container--application-functional'>
+        <div class='functional-information'>
+          <h3 class='functional-information__header'>Easy-to-use interfaces<br>on every platform</h3>
+          <p class='functional-information__paragraph'>
               Since most of our features work in a completely automated<br>way, you
               will mainly use our apps to discover new TV shows<br>recommended for
               you and discuss the most interesting<br>episodes with like-minded
@@ -149,44 +150,44 @@
           <ul class='functional-list'>
             <li>
               <img src="img/dashboard.png" alt="Customized Dashboard picture" />
-              <a class='functional-list-item-link' href="/about-custimized-dashboard">Customized Dashboard</a>
+              <a class='functional-list__link' href="/about-custimized-dashboard">Customized Dashboard</a>
             </li>
             <li>
               <img src="img/day_night_mode.png" alt="Automatic Day & Night Modes picture" />
-              <a class='functional-list-item-link' href="/about-day-night-mode">Automatic Day & Night Modes</a>
+              <a class='functional-list__link' href="/about-day-night-mode">Automatic Day & Night Modes</a>
             </li>
             <li>
               <img src="img/integrated_chat.png" alt="Integrated Chat Platformpicture" />
-              <a class='functional-list-item-link' href="/about-integrated-chat">Integrated Chat Platform</a>
+              <a class='functional-list__link' href="/about-integrated-chat">Integrated Chat Platform</a>
             </li>
           </ul>
         </div>
-        <div class='application-functional-background'>
-          <img class='application-functional-picture' src="img/iphone-x-mockup.png" alt="Iphone appplication presentation picture"/>
+        <div class='functional-image-container'>
+          <img class='functional-image--bottom-left' src="img/iphone-x-mockup.png" alt="Iphone appplication presentation picture"/>
         </div>
       </div>
-      <div id="community" class='topic-two-column community'>
-        <div class='community-left'> 
-          <p class='paragraph4'>Community</p>
-          <h3>We believe in the<br>power of community</h3>
-          <p class='paragraph3'>
+      <div id="community" class='two-columns-container two-columns-container--community'>
+        <div class='community-information community-information--center-align'> 
+          <p class='community-information__title'>Community</p>
+          <h3 class='community-information__header'>We believe in the<br>power of community</h3>
+          <p class='community-information__paragraph'>
             Our goal is to create a product and service that you’re<br>satisfied
             with and use it every day. This is why we’re<br>constantly working on
             our services to make it better<br>every day and really listen to what
             our users has to say.
           </p>
-          <button class='purple-button button-community'>Read more testimonials</button>
+          <button class='purple-button purple-button--community'>Read more testimonials</button>
         </div>
-        <div class='community-right'>
-          <ul class='feedback-list feedback-list-left'>
-            <li class='feedback-list-item'>
+        <div class='community-feedback-container'>
+          <ul class='feedback-list feedback-list--left'>
+            <li class='feedback-list__item'>
               <article class='twitt'>
                 <header class='twitt-profile-containter'>
-                  <div class='twitt-profile-title-container'>
+                  <div class='twitt-profile-title'>
                     <a href="/andrey-cherevko" target="_blank">
-                      <img class='twitt-profile-img' src="img/twitter-profile-photo-template.jpg" alt="Go toAndrey Chrevko twitter profile" />
+                      <img class='twitt-profile-title__img' src="img/twitter-profile-photo-template.jpg" alt="Go toAndrey Chrevko twitter profile" />
                     </a>
-                    <h5  class='twitt-user-title'>Andrey Cherevko</h5>
+                    <h5  class='twitt-profile-title__header'>Andrey Cherevko</h5>
                   </div>
                   <img src="img/twitter.png" alt="Twitter"/>
                 </header>
@@ -199,14 +200,14 @@
                 </footer>
               </article>
             </li>
-            <li class='feedback-list-item'>
+            <li class='feedback-list__item'>
               <article class='twitt'>
                 <header class='twitt-profile-containter'>
-                  <div class='twitt-profile-title-container'>
+                  <div class='twitt-profile-title'>
                     <a href="/andrey-cherevko" target="_blank">
-                      <img class='twitt-profile-img' src="img/twitter-profile-photo-template.jpg" alt="Go to Andrey Chrevko twitter profile" />
+                      <img class='twitt-profile-title__img' src="img/twitter-profile-photo-template.jpg" alt="Go to Andrey Chrevko twitter profile" />
                     </a>
-                    <h5  class='twitt-user-title'>Patrick Martin</h5>
+                    <h5  class='twitt-profile-title__header'>Patrick Martin</h5>
                   </div>
                   <img src="img/twitter.png" alt="Twitter"/>
                 </header>
@@ -220,14 +221,14 @@
                 </footer>
               </article>
             </li>
-            <li class='feedback-list-item'>
+            <li class='feedback-list__item'>
               <article class='twitt'>
                 <header class='twitt-profile-containter'>
-                  <div class='twitt-profile-title-container'>
+                  <div class='twitt-profile-title'>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img class='twitt-profile-img' src="img/twitter-profile-photo-template.jpg" alt="Go to Bruce Murphy twitter profile" />
+                        <img class='twitt-profile-title__img' src="img/twitter-profile-photo-template.jpg" alt="Go to Bruce Murphy twitter profile" />
                       </a>
-                    <h5  class='twitt-user-title'>Bruce Murphy</h5>
+                    <h5  class='twitt-profile-title__header'>Bruce Murphy</h5>
                   </div>
                   <img src="img/twitter.png" alt="Twitter"/>
                 </header>
@@ -240,14 +241,14 @@
                 </footer>
               </article>
             </li>
-            <li class='feedback-list-item'>
+            <li class='feedback-list__item'>
               <article class='twitt'>
                 <header class='twitt-profile-containter'>
-                  <div class='twitt-profile-title-container'>
+                  <div class='twitt-profile-title'>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img class='twitt-profile-img' src="img/twitter-profile-photo-template.jpg" alt="Go to Crystal Perkins twitter profile" />
+                        <img class='twitt-profile-title__img' src="img/twitter-profile-photo-template.jpg" alt="Go to Crystal Perkins twitter profile" />
                       </a>
-                    <h5  class='twitt-user-title'>Crystal Perkins</h5>
+                    <h5  class='twitt-profile-title__header'>Crystal Perkins</h5>
                   </div>
                   <img src="img/twitter.png" alt="Twitter"/>
                 </header>
@@ -261,14 +262,14 @@
                 </footer>
               </article>
             </li>
-            <li class='feedback-list-item'>
+            <li class='feedback-list__item'>
               <article class='twitt'>
                 <header class='twitt-profile-containter'>
-                  <div class='twitt-profile-title-container'>
+                  <div class='twitt-profile-title'>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img class='twitt-profile-img' src="img/twitter-profile-photo-template.jpg" alt="Go to Bruce Wain twitter profile" />
+                        <img class='twitt-profile-title__img' src="img/twitter-profile-photo-template.jpg" alt="Go to Bruce Wain twitter profile" />
                       </a>
-                    <h5  class='twitt-user-title'>Bruce Wain</h5>
+                    <h5  class='twitt-profile-title__header'>Bruce Wain</h5>
                   </div>
                   <img src="img/twitter.png" alt="Twitter"/>
                 </header>
@@ -283,15 +284,15 @@
               </article>
             </li>
           </ul>
-          <ul class='feedback-list feedback-list-right'>
-            <li class='feedback-list-item'>
+          <ul class='feedback-list feedback-list--right'>
+            <li class='feedback-list__item'>
               <article class='twitt'>
                 <header class='twitt-profile-containter'>
-                  <div class='twitt-profile-title-container'>
+                  <div class='twitt-profile-title'>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img class='twitt-profile-img' src="img/twitter-profile-photo-template.jpg" alt="Go to Andrey Cherevko twitter profile" />
+                        <img class='twitt-profile-title__img' src="img/twitter-profile-photo-template.jpg" alt="Go to Andrey Cherevko twitter profile" />
                       </a>
-                    <h5  class='twitt-user-title'>Andrey Cherevko</h5>
+                    <h5  class='twitt-profile-title__header'>Andrey Cherevko</h5>
                   </div>
                   <img src="img/twitter.png" alt="Twitter"/>
                 </header>
@@ -304,14 +305,14 @@
                 </footer>
               </article>
             </li>
-            <li class='feedback-list-item'>
+            <li class='feedback-list__item'>
               <article class='twitt'>
                 <header class='twitt-profile-containter'>
-                  <div class='twitt-profile-title-container'>
+                  <div class='twitt-profile-title'>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img class='twitt-profile-img' src="img/twitter-profile-photo-template.jpg" alt="Go to Thomas Cruz twitter profile" />
+                        <img class='twitt-profile-title__img' src="img/twitter-profile-photo-template.jpg" alt="Go to Thomas Cruz twitter profile" />
                       </a>
-                    <h5  class='twitt-user-title'>Thomas Cruz</h5>
+                    <h5  class='twitt-profile-title__header'>Thomas Cruz</h5>
                   </div>
                   <img src="img/twitter.png" alt="Twitter"/>
                 </header>
@@ -325,14 +326,14 @@
                 </footer>
               </article>
             </li>
-            <li class='feedback-list-item'>
+            <li class='feedback-list__item'>
               <article class='twitt'>
                 <header class='twitt-profile-containter'>
-                  <div class='twitt-profile-title-container'>
+                  <div class='twitt-profile-title'>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img class='twitt-profile-img' src="img/twitter-profile-photo-template.jpg" alt="Go to Gregory Wallace twitter profile" />
+                        <img class='twitt-profile-title__img' src="img/twitter-profile-photo-template.jpg" alt="Go to Gregory Wallace twitter profile" />
                       </a>
-                    <h5  class='twitt-user-title'>Gregory Wallace</h5>
+                    <h5  class='twitt-profile-title__header'>Gregory Wallace</h5>
                   </div>
                   <img src="img/twitter.png" alt="Twitter"/>
                 </header>
@@ -345,14 +346,14 @@
                 </footer>
               </article>
             </li>
-            <li class='feedback-list-item'>
+            <li class='feedback-list__item'>
               <article class='twitt'>
                 <header class='twitt-profile-containter'>
-                  <div class='twitt-profile-title-container'>
+                  <div class='twitt-profile-title'>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img class='twitt-profile-img' src="img/twitter-profile-photo-template.jpg" alt="Go to Megan Walters twitter profile" />
+                        <img class='twitt-profile-title__img' src="img/twitter-profile-photo-template.jpg" alt="Go to Megan Walters twitter profile" />
                       </a>
-                    <h5  class='twitt-user-title'>Megan Walters</h5>
+                    <h5  class='twitt-profile-title__header'>Megan Walters</h5>
                   </div>
                   <img src="img/twitter.png" alt="Twitter"/>
                 </header>
@@ -366,14 +367,14 @@
                 </footer>
               </article>
             </li>
-            <li class='feedback-list-item'>
+            <li class='feedback-list__item'>
               <article class='twitt'>
                 <header class='twitt-profile-containter'>
-                  <div class='twitt-profile-title-container'>
+                  <div class='twitt-profile-title'>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img class='twitt-profile-img' src="img/twitter-profile-photo-template.jpg" alt="Go to Andrew Cook twitter profile" />
+                        <img class='twitt-profile-title__img' src="img/twitter-profile-photo-template.jpg" alt="Go to Andrew Cook twitter profile" />
                       </a>
-                    <h5  class='twitt-user-title'>Andrew Cook</h5>
+                    <h5  class='twitt-profile-title__header'>Andrew Cook</h5>
                   </div>
                   <img src="img/twitter.png" alt="Twitter"/>
                 </header>
@@ -390,42 +391,42 @@
           </ul>
         </div>
       </div>
-      <div id="getstarted" class='getstarted'>
-        <p class='paragraph4'>Get Started</p>
-        <h2>Start tracking your TV<br>shows for free</h2>
-        <p class='paragraph2'>
+      <div id="getstarted" class='getstarted-information'>
+        <p class='getstarted-information__title'>Get Started</p>
+        <h2 class='getstarted-information__header'>Start tracking your TV<br>shows for free</h2>
+        <p class='getstarted-information__paragraph'>
           In order to start tracking your TV shows, all you have to do is enter<br>your
           email address. Everything else will be taken care of by us. All you<br>have
           to do is sit back, relax and enjoy your TV shows.
         </p>
-        <form class='email getstarted-email'>
-          <fieldset class='email-value-block'>
-            <label class='email-title' for="email2">Email</label>
-            <input class='email-value' id='email2' type="email" placeholder="your@email.com" />
+        <form class='email-form email-form--getstarted'>
+          <fieldset class='email-input-container'>
+            <label class='email-input-container__title' for="email2">Email</label>
+            <input class='email-input-container__value' id='email2' type="email" placeholder="your@email.com" />
           </fieldset>        
-          <button class='purple-button purple-button-page'>Start tracking</button>
+          <button class='purple-button purple-button--email'>Start tracking</button>
         </form> 
       </div>
     </main>
     <footer class='footer'>
       <ul class='footer-list'>
-        <li class='footer-list-item' >
+        <li class='footer-list__item' >
           <a href="//www.tritter.com" target="_blank">
             <img src="img/dark-twitter.png" alt="Got to our twitter official page"/>
           </a>
         </li>
-        <li class='footer-list-item'>
+        <li class='footer-list__item'>
           <a href="//www.facebook.com" target="_blank">
             <img src="img/facebook.png" alt="Got to our facebook official page" />
           </a>
         </li>
-        <li class='footer-list-item'>
+        <li class='footer-list__item'>
           <a href="//www.youtube.com" target="_blank">
             <img src="img/youtube.png" alt="Got to our youtube official chanel" />
           </a>
         </li>
       </ul>
-      <p class='footer-paragraph'>Copyright 2018 All rights reserved — Designed by Daniel Korpai</p>
+      <p class='footer-copyright-text'>Copyright 2018 All rights reserved — Designed by Daniel Korpai</p>
     </footer>
   </body>
 </html>
