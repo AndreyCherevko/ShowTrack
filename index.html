@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" rel="stylesheet" />
     <title>ShowTrackr</title>
   </head>
 
   <body>
     <!-- navigation menu-->
-    <header class='header'>
-      <nav class='navigation'>
+    <header>
+      <nav class='navigation navigation--white'>
         <span class='navigation-title'>Show<span class='navigation-title__purple-part'>Trackr</span></span>   
         <ul class='navigation-pages__list'>
           <li class="navigation-pages__item"><a href="#features">Features</a></li>
@@ -22,14 +23,16 @@
         </div>
       </nav>
     </header>
+    <!-- navigation menu-->
     <main>
+      <!-- hero block-->
       <div class='two-columns-container two-columns-container--appication-presentation'>
         <div class='hero-information-container hero-information-container--bottom'>
-          <div class='hero-information'> 
+          <div  class='hero-information hero-information--bottom-position'> 
             <h1 class='hero-information__header'>Track your shows<br>automatically</h1>
-            <p class='hero-information__paragraph'>
-                With ShowTrackr you can track your favorite TV shows<br>automatically,
-                so you never loose track of your TV<br>
+            <p  class='hero-information__paragraph'>
+                With ShowTrackr you can track your favorite TV shows automatically,
+                so you never loose track of your TV 
                 shows ever again. 🍿
             </p>
           </div>
@@ -55,13 +58,15 @@
             <img src="img/iphone-x-mockup.png" alt="Iphone appplication presentation picture" />
         </div>
       </div>
-      <div class='feature-information-container feature-information-container--bottom'>
+      <!-- hero block-->
+      <!--feature block-->
+      <div class='feature-information-container feature-information-container--bottom-postition'>
         <div class='feature-information feature-information--bottom'>
           <p class='feature-information__title'>Features</p>
           <h2 class='feature-information__header'>Built and customized<br>for your habits</h2>
           <p class='feature-information__paragraph'>
-              ShowTrackr’s built-in machine learning and context-aware features<br>guarantee
-              that all the notifications and recommendations are always<br>delivered
+              ShowTrackr’s built-in machine learning and context-aware features guarantee
+              that all the notifications and recommendations are always delivered
               to you in the perfect moment.
           </p>
         </div>
@@ -101,50 +106,54 @@
           <a class='features-list__link' href="/lm_smart_notifications">Learn more ></a>
         </li>
       </ul>
-      <ul class='series-list'>
-        <li>
+      <!--feature block-->
+      <!--series list block-->
+      <ul class='series-list series-list--bottom-position'>
+        <li class='series-list__item'>
           <a href="//www.netflix.com/ua/title/70264888" target="_blank" >
             <img src="img/series/black_mirror.png" alt="Go to offical page of 'Black mirror' series" />
           </a>
         </li>
-        <li>
+        <li class='series-list__item'>
           <a href="//www.netflix.com/ua/title/80057281" target="_blank">
             <img src="img/series/stranger_things.png" alt="Go to offical page of 'Stranger Things' series" />
           </a>
         </li>
-        <li>
+        <li class='series-list__item'>
           <a href="//www.hbo.com/westworld" target="_blank" >
             <img src="img/series/west_world.png" alt="Go to offical page of 'West world' series" />
           </a>
         </li>
-        <li>
+        <li class='series-list__item'>
           <a href="//www.netflix.com/ua/title/70178217" target="_blank" >
             <img src="img/series/card_house.png" alt="Go to offical page of 'House of Cards' series" />
           </a>
         </li>
-        <li>
+        <li class='series-list__item'>
           <a href="//www.hbo.com/game-of-thrones" target="_blank">
             <img src="img/series/game_thrones.png" alt="Go to offical page of 'Game of Thrones' series" />
           </a>
         </li>
-        <li>
+        <li class='series-list__item'>
           <a href="//www.netflix.com/ua/title/80027042" target="_blank">
             <img src="img/series/flash.png" alt="Go to offical page of 'Flash' series"/>
           </a>
         </li>
-        <li>
+        <li class='series-list__item'>
           <a href="//www.netflix.com/ua/title/80024057" target="_blank">
             <img src="img/series/murder.png" alt="Go to offical page of 'How to Get Away With Murder' series"/>
           </a>
         </li>
       </ul>
+      <!--series list block-->
+      <!--functional block-->
       <div  id="features" class='two-columns-container two-columns-container--application-functional'>
         <div class='functional-information'>
           <h3 class='functional-information__header'>Easy-to-use interfaces<br>on every platform</h3>
           <p class='functional-information__paragraph'>
-              Since most of our features work in a completely automated<br>way, you
-              will mainly use our apps to discover new TV shows<br>recommended for
-              you and discuss the most interesting<br>episodes with like-minded
+              Since most of our features work in a completely automated way, you
+              will mainly use our apps to discover new TV shows recommended for
+              you and discuss the most interesting episodes with like-minded
               people.
           </p>
           <ul class='functional-list'>
@@ -166,14 +175,16 @@
           <img class='functional-image--bottom-left' src="img/iphone-x-mockup.png" alt="Iphone appplication presentation picture"/>
         </div>
       </div>
+      <!--functional block-->
+      <!--community block-->
       <div id="community" class='two-columns-container two-columns-container--community'>
         <div class='community-information community-information--center-align'> 
           <p class='community-information__title'>Community</p>
           <h3 class='community-information__header'>We believe in the<br>power of community</h3>
           <p class='community-information__paragraph'>
-            Our goal is to create a product and service that you’re<br>satisfied
-            with and use it every day. This is why we’re<br>constantly working on
-            our services to make it better<br>every day and really listen to what
+            Our goal is to create a product and service that you’re satisfied
+            with and use it every day. This is why we’re constantly working on
+            our services to make it better every day and really listen to what
             our users has to say.
           </p>
           <button class='purple-button purple-button--community'>Read more testimonials</button>
@@ -391,12 +402,13 @@
           </ul>
         </div>
       </div>
+      <!--community block-->
       <div id="getstarted" class='getstarted-information'>
         <p class='getstarted-information__title'>Get Started</p>
         <h2 class='getstarted-information__header'>Start tracking your TV<br>shows for free</h2>
         <p class='getstarted-information__paragraph'>
-          In order to start tracking your TV shows, all you have to do is enter<br>your
-          email address. Everything else will be taken care of by us. All you<br>have
+          In order to start tracking your TV shows, all you have to do is enter your
+          email address. Everything else will be taken care of by us. All you have
           to do is sit back, relax and enjoy your TV shows.
         </p>
         <form class='email-form email-form--getstarted'>
@@ -408,6 +420,7 @@
         </form> 
       </div>
     </main>
+    <!--footer block-->
     <footer class='footer'>
       <ul class='footer-list'>
         <li class='footer-list__item' >
@@ -428,5 +441,6 @@
       </ul>
       <p class='footer-copyright-text'>Copyright 2018 All rights reserved — Designed by Daniel Korpai</p>
     </footer>
+    <!--footer block-->
   </body>
 </html>
