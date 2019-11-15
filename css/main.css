@@ -678,6 +678,7 @@ main {
 
   .hero-information__paragraph {
     font-size: 18px;
+    width: 100%;
   }
 
   .hero-information-container::before {
@@ -716,6 +717,7 @@ main {
 
   .feature-information__paragraph {
     font-size: 18px;
+    width: 100%;
   }
 
   .feature-information-container--bottom-postition {
@@ -755,6 +757,7 @@ main {
 
   .functional-information__paragraph {
     font-size: 16px;
+    width: 100%;
   }
 
   .functional-image-container {
@@ -782,6 +785,7 @@ main {
 
   .community-information__paragraph {
     font-size: 16px;
+    width: 100%;
   }
 
   .feedback-list {
@@ -812,5 +816,6 @@ main {
   .getstarted-information__paragraph {
     font-size: 18px;
     text-align: center;
+    width: 100%;
   }
 }
