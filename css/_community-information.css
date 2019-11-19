@@ -1,0 +1,50 @@
+.community-information {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 420px;
+}
+
+.community-information--center-align {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.community-information__title {
+  font-family: SourceSansPro-Light;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.community-information__header {
+  font-family: SourceSansPro-Bold;
+  font-size: 46px;
+  margin: 0;
+}
+
+.community-information__paragraph {
+  font-family: SourceSansPro-Regular;
+  font-size: 18px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .community-information {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .community-information--center-align {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .community-information__header {
+    font-size: 32px;
+  }
+
+  .community-information__paragraph {
+    font-size: 16px;
+    width: 100%;
+  }
+}

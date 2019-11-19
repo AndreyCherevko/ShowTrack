@@ -1,0 +1,27 @@
+.functional-preview__background {
+  height: 510px;
+  width: 650px;
+  background-image: url(../img/web-app-mockup.png);
+}
+
+.functional-preview__image--bottom-left {
+  margin-left: -100px;
+  margin-top: -350px;
+}
+
+@media (max-width: 768px) {
+  .functional-preview {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .functional-preview__background {
+    display: none;
+  }
+
+  .functional-preview__image--bottom-left {
+    margin-left: auto;
+    margin-top: auto;
+  }
+}

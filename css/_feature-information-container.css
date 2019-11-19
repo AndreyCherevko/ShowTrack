@@ -1,0 +1,13 @@
+.feature-information-container {
+  text-align: center;
+}
+
+.feature-information-container--bottom-postition {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .feature-information-container--bottom-postition {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,21 @@
+.compatible-information {
+}
+
+.compatible-information--hero {
+  margin-top: 85px;
+  width: auto;
+  max-width: 450px;
+}
+
+.compatible-information__header {
+  font-family: SourceSansPro-SemiBold;
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .compatible-information {
+    width: 100%;
+  }
+}

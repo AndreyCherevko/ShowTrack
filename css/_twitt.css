@@ -1,0 +1,43 @@
+.twitt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 260px;
+  height: 210px;
+  padding: 15px;
+}
+
+.twitt-profile-containter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.twitt-profile-title {
+  display: flex;
+}
+
+.twitt-profile-title__img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.twitt-profile-title__header {
+  font-family: SourceSansPro-SemiBold;
+  font-size: 12px;
+  margin: auto;
+}
+
+.twitt-text {
+  font-family: SourceSansPro-Regular;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.twitt-time {
+  font-family: SourceSansPro-Regular;
+  font-size: 12px;
+  opacity: 0.5;
+}

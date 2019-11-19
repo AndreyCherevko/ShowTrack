@@ -44,7 +44,7 @@
             <button class='purple-button purple-button--email'>Start tracking</button>
           </form>         
           <div class='compatible-information compatible-information--hero'>
-            <h5 class='compatible-header' >COMPATIBLE WITH</h5>
+            <h5 class='compatible-information__header' >COMPATIBLE WITH</h5>
             <ul class='compatible-list'>
               <li class='compatible-list__item'><img src="img/netflix.png" alt="Compatible with Netflix" /></li>
               <li class='compatible-list__item'><img src="img/apple.png" alt="Compatible with Apple" /></li>
@@ -54,14 +54,16 @@
             </ul>
           </div>
         </div>
-        <div class='hero-image-container'>
-            <img src="img/iphone-x-mockup.png" alt="Iphone appplication presentation picture" />
+        <div class='hero-preview'>
+          <div class='hero-preview__image'>
+              <img src="img/iphone-x-mockup.png" alt="Iphone appplication presentation picture" />
+          </div>
         </div>
       </div>
       <!-- hero block-->
       <!--feature block-->
       <div class='feature-information-container feature-information-container--bottom-postition'>
-        <div class='feature-information feature-information--bottom'>
+        <div class='feature-information feature-information--bottom-postition'>
           <p class='feature-information__title'>Features</p>
           <h2 class='feature-information__header'>Built and customized<br>for your habits</h2>
           <p class='feature-information__paragraph'>
@@ -150,29 +152,31 @@
       <div  id="features" class='two-columns-container two-columns-container--application-functional'>
         <div class='functional-information'>
           <h3 class='functional-information__header'>Easy-to-use interfaces<br>on every platform</h3>
-          <p class='functional-information__paragraph'>
+          <p class='functional-information__paragraph functional-information__paragraph--bottom-pisition'>
               Since most of our features work in a completely automated way, you
               will mainly use our apps to discover new TV shows recommended for
               you and discuss the most interesting episodes with like-minded
               people.
           </p>
           <ul class='functional-list'>
-            <li>
+            <li class='functional-list__item'> 
               <img src="img/dashboard.png" alt="Customized Dashboard picture" />
               <a class='functional-list__link' href="/about-custimized-dashboard">Customized Dashboard</a>
             </li>
-            <li>
+            <li class='functional-list__item'>
               <img src="img/day_night_mode.png" alt="Automatic Day & Night Modes picture" />
               <a class='functional-list__link' href="/about-day-night-mode">Automatic Day & Night Modes</a>
             </li>
-            <li>
+            <li class='functional-list__item'>
               <img src="img/integrated_chat.png" alt="Integrated Chat Platformpicture" />
               <a class='functional-list__link' href="/about-integrated-chat">Integrated Chat Platform</a>
             </li>
           </ul>
         </div>
-        <div class='functional-image-container'>
-          <img class='functional-image--bottom-left' src="img/iphone-x-mockup.png" alt="Iphone appplication presentation picture"/>
+        <div class='functional-preview'>
+          <div class='functional-preview__background'> 
+          </div>
+          <img class='functional-preview__image--bottom-left' src="img/iphone-x-mockup.png" alt="Iphone appplication presentation picture"/>
         </div>
       </div>
       <!--functional block-->
