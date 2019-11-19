@@ -20,6 +20,7 @@
 @import "_series-list.css";
 @import "_twitt.css";
 @import "_two-columns-container.css";
+@import "./test.css";
 
 * {
   box-sizing: border-box;
