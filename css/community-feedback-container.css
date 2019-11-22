@@ -1,9 +1,0 @@
-.community-feedback-container {
-  display: flex;
-  overflow: auto;
-  justify-content: center;
-}
-
-.community-feedback-container::-webkit-scrollbar {
-  display: none;
-}
