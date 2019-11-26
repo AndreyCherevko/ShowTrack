@@ -6,65 +6,81 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>ShowTrackr</title>
   </head>
+  <style>
+      .twitter-profile-image {
+        weight:36px;
+        height: 36px;
+      }
 
+      .community-color {
+        background-color:black;
+        color:white;
+      }
+  </style>
   <body>
     <!-- navigation menu-->
-    <header>
-      <nav>
-        <span>Show<span>Trackr</span></span>   
-        <ul>
+    <header class='container'>
+      <nav class='row'>
+        <span class='col-5'>Show<span>Trackr</span></span>   
+        <ul class='d-sm-none'>
           <li><a href="#features">Features</a></li>
           <li><a href="#community">Community</a></li>
           <li><a href="#getstarted">Get Started</a></li>
         </ul>
-        <div>
-          <a href="/login">Log in</a>
-          <button>Get started</button>
+        <div class='col-5'>
+          <a class='d-sm-none' href="/login">Log in</a>
+          <button  class='btn btn-primary'>Get started</button>
         </div>
       </nav>
     </header>
     <!-- navigation menu-->
-    <main>
+    <main class='container'>
       <!-- hero block-->
-      <div>
-        <div>
-          <div> 
-            <h1>Track your shows<br>automatically</h1>
-            <p>
-                With ShowTrackr you can track your favorite TV shows automatically,
-                so you never loose track of your TV 
-                shows ever again. 🍿
-            </p>
-          </div>
-          <form>
-            <fieldset>
-              <label for="email1">Email</label>
-              <input id='email1' type="email" placeholder="your@email.com" />
-            </fieldset>        
-            <button>Start tracking</button>
-          </form>         
+      <div class='row'>
+        <div class='col-8'> 
+          <div class='mb-3'> 
+            <div>
+              <div> 
+                <h1>Track your shows<br>automatically</h1>
+                <p> 
+                    With ShowTrackr you can track your favorite TV shows automatically,
+                    so you never loose track of your TV 
+                    shows ever again. 🍿
+                </p>
+              </div>
+            </div>
+           </div>
+          <div class='mb-3'>
+            <form class='form-inline'>
+              <fieldset>
+                <label class='justify-content-start display-7 text-primary font-weight-bold m-0' for="email1">Email</label>
+                <input class='form-control p-0 border-0' id='email1' type="email" placeholder="your@email.com" />
+              </fieldset>        
+              <button class='btn btn-primary'>Start tracking</button>
+            </form>  
+          </div>       
           <div>
-            <h5>COMPATIBLE WITH</h5>
-            <ul>
-              <li><img src="img/netflix.png" alt="Compatible with Netflix" /></li>
-              <li><img src="img/apple.png" alt="Compatible with Apple" /></li>
-              <li><img src="img/android.png" alt="Compatible with Android" /></li>
-              <li><img src="img/windows.png" alt="Compatible with windows" /></li>
-              <li><img src="img/synology.png" alt="Compatible with Synology" /></li>
+            <h5 class='text-muted'>COMPATIBLE WITH</h5>
+            <ul class='list-group list-group-horizontal border-0 mx-0'>
+              <li class='list-group-item border-0 px-0 mr-2'><img src="img/netflix.png" alt="Compatible with Netflix" /></li>
+              <li class='list-group-item border-0 px-0 mr-2'><img src="img/apple.png" alt="Compatible with Apple" /></li>
+              <li class='list-group-item border-0 px-0 mr-2'><img src="img/android.png" alt="Compatible with Android" /></li>
+              <li class='list-group-item border-0 px-0 mr-2'><img src="img/windows.png" alt="Compatible with windows" /></li>
+              <li class='list-group-item border-0 px-0 mr-2'><img src="img/synology.png" alt="Compatible with Synology" /></li>
             </ul>
           </div>
         </div>
-        <div>
-          <div>
+        <div class='col-8 px-0'>
+          <div> 
               <img src="img/iphone-x-mockup.png" alt="Iphone appplication presentation picture" />
           </div>
         </div>
       </div>
       <!-- hero block-->
       <!--feature block-->
-      <div>
-        <div>
-          <p>Features</p>
+      <div class='row'>
+        <div class='col-8'>
+          <p class='text-muted'>Features</p>
           <h2>Built and customized<br>for your habits</h2>
           <p>
               ShowTrackr’s built-in machine learning and context-aware features guarantee
@@ -73,8 +89,8 @@
           </p>
         </div>
       </div>
-      <ul>
-        <li>
+      <ul class='list-group border-0 mx-0'>
+        <li class='list-group-item border-0 px-0 mr-2'>
           <div>
             <img src="img/triangle.png" alt="Automated tracking picture" />
           </div>
@@ -85,7 +101,7 @@
           </p>
           <a href="/lm_automated_tracking">Learn more ></a>
         </li>
-        <li>
+        <li class='list-group-item border-0 px-0 mr-2'>
           <div>
             <img src="img/machine-learning.png" alt="Machine learning picture" />  
           </div>
@@ -96,7 +112,7 @@
           </p>
           <a href="/lm_machine_learning">Learn more ></a>
         </li>
-        <li>
+        <li class='list-group-item border-0 px-0 mr-2'>
           <div>
             <img src="img/smart-notifications.png" alt="Smart notifications" />
           </div>
@@ -110,38 +126,38 @@
       </ul>
       <!--feature block-->
       <!--series list block-->
-      <ul>
-        <li>
+      <ul class='list-group overflow-auto list-group-horizontal border-0 mx-0 mb-5'>
+        <li class='list-group-item border-0 px-0 mr-2'>
           <a href="//www.netflix.com/ua/title/70264888" target="_blank" >
             <img src="img/series/black_mirror.png" alt="Go to offical page of 'Black mirror' series" />
           </a>
         </li>
-        <li>
+        <li class='list-group-item border-0 px-0 mr-2'>
           <a href="//www.netflix.com/ua/title/80057281" target="_blank">
             <img src="img/series/stranger_things.png" alt="Go to offical page of 'Stranger Things' series" />
           </a>
         </li>
-        <li>
+        <li class='list-group-item border-0 px-0 mr-2'>
           <a href="//www.hbo.com/westworld" target="_blank" >
             <img src="img/series/west_world.png" alt="Go to offical page of 'West world' series" />
           </a>
         </li>
-        <li>
+        <li class='list-group-item border-0 px-0 mr-2'>
           <a href="//www.netflix.com/ua/title/70178217" target="_blank" >
             <img src="img/series/card_house.png" alt="Go to offical page of 'House of Cards' series" />
           </a>
         </li>
-        <li>
+        <li class='list-group-item border-0 px-0 mr-2'>
           <a href="//www.hbo.com/game-of-thrones" target="_blank">
             <img src="img/series/game_thrones.png" alt="Go to offical page of 'Game of Thrones' series" />
           </a>
         </li>
-        <li>
+        <li class='list-group-item border-0 px-0 mr-2'>
           <a href="//www.netflix.com/ua/title/80027042" target="_blank">
             <img src="img/series/flash.png" alt="Go to offical page of 'Flash' series"/>
           </a>
         </li>
-        <li>
+        <li class='list-group-item border-0 px-0 mr-2'>
           <a href="//www.netflix.com/ua/title/80024057" target="_blank">
             <img src="img/series/murder.png" alt="Go to offical page of 'How to Get Away With Murder' series"/>
           </a>
@@ -149,8 +165,8 @@
       </ul>
       <!--series list block-->
       <!--functional block-->
-      <div  id="features">
-        <div>
+      <div id="features" class='row'>
+        <div class='col-8 mb-3'>
           <h3>Easy-to-use interfaces<br>on every platform</h3>
           <p>
               Since most of our features work in a completely automated way, you
@@ -158,22 +174,22 @@
               you and discuss the most interesting episodes with like-minded
               people.
           </p>
-          <ul>
-            <li> 
+          <ul class='list-group border-0 mx-0'>
+            <li class='list-group-item border-0 px-0 mr-2'> 
               <img src="img/dashboard.png" alt="Customized Dashboard picture" />
               <a href="/about-custimized-dashboard">Customized Dashboard</a>
             </li>
-            <li>
+            <li class='list-group-item border-0 px-0 mr-2'>
               <img src="img/day_night_mode.png" alt="Automatic Day & Night Modes picture" />
               <a href="/about-day-night-mode">Automatic Day & Night Modes</a>
             </li>
-            <li>
+            <li class='list-group-item border-0 px-0 mr-2'>
               <img src="img/integrated_chat.png" alt="Integrated Chat Platformpicture" />
               <a href="/about-integrated-chat">Integrated Chat Platform</a>
             </li>
           </ul>
         </div>
-        <div>
+        <div class='col-8' >
           <div> 
           </div>
           <img src="img/iphone-x-mockup.png" alt="Iphone appplication presentation picture"/>
@@ -181,8 +197,8 @@
       </div>
       <!--functional block-->
       <!--community block-->
-      <div id="community">
-        <div> 
+      <div id="community" class='row community-color'>
+        <div class='col-8 mb-5'> 
           <p>Community</p>
           <h3>We believe in the<br>power of community</h3>
           <p>
@@ -191,16 +207,16 @@
             our services to make it better every day and really listen to what
             our users has to say.
           </p>
-          <button>Read more testimonials</button>
+          <button class='btn btn-primary'>Read more testimonials</button>
         </div>
-        <div>
-          <ul>
-            <li>
+        <div class='col-8 community-color'>
+          <ul class='list-group border-0 mx-0'>
+            <li class='list-group-item bg-dark border-0 px-0 mr-2 mb-2'>
               <article>
                 <header>
                   <div>
                     <a href="/andrey-cherevko" target="_blank">
-                      <img src="img/twitter-profile-photo-template.jpg" alt="Go toAndrey Chrevko twitter profile" />
+                      <img class='rounded-circle twitter-profile-image' src="img/twitter-profile-photo-template.jpg" alt="Go toAndrey Chrevko twitter profile" />
                     </a>
                     <h5>Andrey Cherevko</h5>
                   </div>
@@ -215,12 +231,12 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class='list-group-item border-0 px-0 mr-2 mb-2'>
               <article>
                 <header>
                   <div>
                     <a href="/andrey-cherevko" target="_blank">
-                      <img src="img/twitter-profile-photo-template.jpg" alt="Go to Andrey Chrevko twitter profile" />
+                      <img class='rounded-circle twitter-profile-image' src="img/twitter-profile-photo-template.jpg" alt="Go to Andrey Chrevko twitter profile" />
                     </a>
                     <h5>Patrick Martin</h5>
                   </div>
@@ -236,12 +252,12 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class='list-group-item border-0 px-0 mr-2 mb-2'>
               <article>
                 <header>
                   <div>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img src="img/twitter-profile-photo-template.jpg" alt="Go to Bruce Murphy twitter profile" />
+                        <img class='rounded-circle twitter-profile-image' src="img/twitter-profile-photo-template.jpg" alt="Go to Bruce Murphy twitter profile" />
                       </a>
                     <h5>Bruce Murphy</h5>
                   </div>
@@ -256,12 +272,12 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class='list-group-item border-0 px-0 mr-2 mb-2'>
               <article>
                 <header>
                   <div>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img src="img/twitter-profile-photo-template.jpg" alt="Go to Crystal Perkins twitter profile" />
+                        <img class='rounded-circle twitter-profile-image' src="img/twitter-profile-photo-template.jpg" alt="Go to Crystal Perkins twitter profile" />
                       </a>
                     <h5>Crystal Perkins</h5>
                   </div>
@@ -277,12 +293,12 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class='list-group-item border-0 px-0 mr-2 mb-2'>
               <article>
                 <header>
                   <div>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img src="img/twitter-profile-photo-template.jpg" alt="Go to Bruce Wain twitter profile" />
+                        <img class='rounded-circle twitter-profile-image' src="img/twitter-profile-photo-template.jpg" alt="Go to Bruce Wain twitter profile" />
                       </a>
                     <h5>Bruce Wain</h5>
                   </div>
@@ -299,13 +315,13 @@
               </article>
             </li>
           </ul>
-          <ul>
-            <li>
+          <ul class='list-group border-0 mx-0'>
+            <li class='list-group-item border-0 px-0 mr-2 mb-2'>
               <article>
                 <header>
                   <div>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img src="img/twitter-profile-photo-template.jpg" alt="Go to Andrey Cherevko twitter profile" />
+                        <img class='rounded-circle twitter-profile-image' src="img/twitter-profile-photo-template.jpg" alt="Go to Andrey Cherevko twitter profile" />
                       </a>
                     <h5>Andrey Cherevko</h5>
                   </div>
@@ -320,12 +336,12 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class='list-group-item border-0 px-0 mr-2 mb-2'>
               <article>
                 <header>
                   <div>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img src="img/twitter-profile-photo-template.jpg" alt="Go to Thomas Cruz twitter profile" />
+                        <img class='rounded-circle twitter-profile-image' src="img/twitter-profile-photo-template.jpg" alt="Go to Thomas Cruz twitter profile" />
                       </a>
                     <h5>Thomas Cruz</h5>
                   </div>
@@ -341,12 +357,12 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class='list-group-item border-0 px-0 mr-2 mb-2'>
               <article>
                 <header>
                   <div>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img src="img/twitter-profile-photo-template.jpg" alt="Go to Gregory Wallace twitter profile" />
+                        <img class='rounded-circle twitter-profile-image' src="img/twitter-profile-photo-template.jpg" alt="Go to Gregory Wallace twitter profile" />
                       </a>
                     <h5>Gregory Wallace</h5>
                   </div>
@@ -361,12 +377,12 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class='list-group-item border-0 px-0 mr-2 mb-2'>
               <article>
                 <header>
                   <div>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img src="img/twitter-profile-photo-template.jpg" alt="Go to Megan Walters twitter profile" />
+                        <img class='rounded-circle twitter-profile-image' src="img/twitter-profile-photo-template.jpg" alt="Go to Megan Walters twitter profile" />
                       </a>
                     <h5>Megan Walters</h5>
                   </div>
@@ -382,12 +398,12 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class='list-group-item border-0 px-0 mr-2 mb-2'>
               <article>
                 <header>
                   <div>
                       <a href="/andrey-cherevko" target="_blank">
-                        <img src="img/twitter-profile-photo-template.jpg" alt="Go to Andrew Cook twitter profile" />
+                        <img class='rounded-circle twitter-profile-image' src="img/twitter-profile-photo-template.jpg" alt="Go to Andrew Cook twitter profile" />
                       </a>
                     <h5>Andrew Cook</h5>
                   </div>
